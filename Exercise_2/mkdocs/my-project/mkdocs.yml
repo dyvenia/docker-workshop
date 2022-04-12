@@ -1,0 +1,10 @@
+site_name: AIA Website
+site_url: http://127.0.0.1:8010/docs
+dev_addr: 0.0.0.0:8010
+nav:
+    - Documents:
+        - Good job: "README.md"
+    - Other Documents:
+        - Some document: "somedoc.md"
+plugins:
+    - search

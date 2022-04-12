@@ -1,0 +1,19 @@
+version: '3'
+services:
+  fastapi:
+    image: fastapi-ex
+    volumes:
+      - ./fastapi_src/src/:/src
+    command: bash -c "cd src && uvicorn main:app --reload --host 0.0.0.0"
+    ports:
+      - 8000:8000
+    container_name: fastapi-ex
+  
+  mkdocs:
+    image: mkdocs-ex
+    volumes:
+      - ./mkdocs/my-project/:/my-project/
+    command: bash -c "cd my-project && mkdocs serve"
+    ports:
+      - 8010:8010
+    container_name: mkdocs-ex
