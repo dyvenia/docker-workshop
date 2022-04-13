@@ -36,6 +36,23 @@ Docker-compose is a tool for defining and running multi-container Docker applica
 * If you are unable to install Docker Desktop, refer to the following section of [this page](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository) to install Docker CLI
 
 # Workshop exercises
+## Folder Structure
+* [Exercise_1/](.\docker-workshop\Exercise_1)
+  * [Dockerfile](.\docker-workshop\Exercise_1\Dockerfile)
+* [Exercise_2/](.\docker-workshop\Exercise_2)
+  * [fastapi_src/](.\docker-workshop\Exercise_2\fastapi_src)
+    * [src/](.\docker-workshop\Exercise_2\fastapi_src\src)
+    * [Dockerfile](.\docker-workshop\Exercise_2\fastapi_src\Dockerfile)
+  * [mkdocs/](.\docker-workshop\Exercise_2\mkdocs)
+    * [my-project/](.\docker-workshop\Exercise_2\mkdocs\my-project)
+    * [Dockerfile](.\docker-workshop\Exercise_2\mkdocs\Dockerfile)
+  * [docker-compose.yaml](.\docker-workshop\Exercise_2\docker-compose.yaml)
+* Docker Workshop.pptx
+* [README.md](.\docker-workshop\README.md)
+
+## Download the exercise files
+* In the command line terminal, run `git clone https://github.com/dyvenia/docker-workshop.git`
+* Alternatively, you can download the files using this [link](https://github.com/dyvenia/docker-workshop)
 ## Exercise 1: Simple Hello world app using Dockerfile
 1) **Start up the command line prompt**
 2) **Navigate to the directory with the exercise files:** using the `cd` command. The directory is called `Exercise_1`
